@@ -90,10 +90,17 @@ def cleanup_poollogs ():
                                         'unvotedate': []
                                 }
                         else:
+                            try:
                                 logcleanup['accounts'][x] = {
                                         'pending': logcleanup['accounts'][x]['pending'] + log['accounts'][x]['pending'],
                                         'received': logcleanup['accounts'][x]['received'] + log['accounts'][x]['received'],
-                                        'unvotedate': logcleanup['accounts'][x]['unvotedate']
+                                         'unvotedate': logcleanup['accounts'][x]['unvotedate']
+                                }
+                            except KeyError:
+                                logcleanup['accounts'][x] = {
+                                        'pending': logcleanup['accounts'][x]['pending'] + log['accounts'][x]['pending'],
+                                        'received': logcleanup['accounts'][x]['received'] + log['accounts'][x]['received'],
+                                        'unvotedate': []
                                 }
 
                         logcleanup['accounts'][x]["unvotedate"].append(str(today_timestamp_readable))
