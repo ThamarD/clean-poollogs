@@ -19,21 +19,21 @@ It uses the information from the config.json which was created during the Lisk p
 ## Running it
 First clone the Cleanpoollogs repository (I asume you already have installed the Lisk pool and requests):
 
-`git clone https://github.com/ThamarD/poollogs-cleanup`
+`git clone https://github.com/ThamarD/clean-poollogs`
+`cd clean-poollogs`
+`cp cleanpoollogs.py ~/lisk-pool/cleanpoollogs.py`
+`cd ~/lisk-pool/`
 
-`cd poollogs-cleanup`
-
+Tip: It is a good practice to make a backup of your poollogs.json while you are trying something new!
 
 Then start it:
-
 `python3 cleanpoollogs.py`
 
 or if you are using another config file:
-
 `python3 cleanpoollogs.py -c config2.json`
 
 It produces 2 files 
-- First file is called "removedvotespoollogs.json" with all the removed voters with their payout, received, pending payout and the date when the "unvote" is registered  by the script.
+- First file is called "removedvotespoollogs.json" with all the removed voters with their received, pending payout and the date when the "unvote" is registered  by the script.
 ```
         "7710578903217350527X": {
             "pending": 0.658589451817388,
