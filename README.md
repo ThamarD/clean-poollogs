@@ -39,15 +39,7 @@ First clone the Cleanpoollogs repository (I asume you already have installed the
 
 Tip: It is a good practice to make a backup of your poollogs.json while you are trying something new!
 
-Then start the python script:
-
-`python3 cleanpoollogs.py`
-
-or if you are using another config file for your "lisk-pool":
-
-`python3 cleanpoollogs.py -c config2.json`
-
-It produces 2 files 
+When you run the script, it produces 2 files 
 - First file is called "removedvotespoollogs.json" with all the removed voters with their received, pending payout and the date when the "unvote" is registered  by the script.
 ```
         "7710578903217350527X": {
@@ -62,6 +54,18 @@ It produces 2 files
 - Second file is the cleaned poollogs.json
 
 So depending on when you run the script the "unvotedate" is more accurate or not (it is not based on blockchain info). 
+
+### quick run
+Start the python script:
+Tip: It is a good practice to make a backup of your poollogs.json while you are trying something new!
+
+`python3 cleanpoollogs.py`
+
+or if you are using another config file for your "lisk-pool":
+
+`python3 cleanpoollogs.py -c config2.json`
+
+
 
 ## Using it
 You can run this script after you have done your pay-out (daily, weekly, or other interval)
