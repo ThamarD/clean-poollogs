@@ -1,5 +1,5 @@
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ThamarD/cleanpoollogs/LICENSE)
-[![docs](https://img.shields.io/badge/doc-online-blue.svg)](https://github.com/ThamarD/cleanpoollogs/wiki)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ThamarD/clean-poollogs/blob/master/LICENSE)
+[![docs](https://img.shields.io/badge/doc-online-blue.svg)](https://github.com/ThamarD/clean-poollogs/blob/master/wiki)
 
 # Cleanpoollogs
 Cleanpoollogs is a cleanup script for the much used DPoS poollog.json (by Dakk) for delegate pay-out in lisk/shift/ARK/rise/oxy/lwf/kapu/onz etc 
