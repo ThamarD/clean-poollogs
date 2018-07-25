@@ -18,7 +18,7 @@ It uses the information from the config.json which was created during the Lisk p
 
 ## Running it
 
-Method 1
+### Method 1
 First clone the Cleanpoollogs repository (I asume you already have installed the Lisk pool and requests):
 
 `git clone https://github.com/ThamarD/clean-poollogs`
@@ -30,7 +30,8 @@ First clone the Cleanpoollogs repository (I asume you already have installed the
 `cd ~/lisk-pool/`
 
 
-Method 2
+### Method 2
+
 `cd ~/lisk-pool/`
 
 `wget https://raw.githubusercontent.com/ThamarD/clean-poollogs/master/cleanpoollogs.py`
