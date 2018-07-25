@@ -30,9 +30,11 @@ First clone the Cleanpoollogs repository (I asume you already have installed the
 Tip: It is a good practice to make a backup of your poollogs.json while you are trying something new!
 
 Then start it:
+
 `python3 cleanpoollogs.py`
 
 or if you are using another config file:
+
 `python3 cleanpoollogs.py -c config2.json`
 
 It produces 2 files 
@@ -61,19 +63,27 @@ these are the steps I normaly do
 5. create a backup copy of the new "payments.sh" in a directory (here "Payments"), just in case
 6. execute payment
 
+These steps look like, the followin, and as you can see, I have renamed the "lisk-pool" directory into "payout-pool":
+
 ```
 cp ~/payout-pool/poollogs.json ~/payout-pool/Payments/$(date +%Y%m%d_%H%M%S).PrePayment.poollogs.json
-sleep 2
+sleep 1
 python3 ~/payout-pool/liskpool.py -y -c ~/payout-pool/config.json
+sleep 1
 python3 ~/payout-pool/cleanpoollogs.py
-sleep 2
+sleep 1
 cp ~/payout-pool/poollogs.json ~/payout-pool/Payments/$(date +%Y%m%d_%H%M%S).PostPayment.poollogs.json
+sleep 1
 cp ~/payout-pool/payments.sh ~/payout-pool/Payments/$(date +%Y%m%d_%H%M%S).payments.sh
+sleep 1
 bash ~/payout-pool/payments.sh
 ```
 
-If you want to use the above, remember to create the Payments directory! In that direcoty overtime you will see the history of your payments in this way:
+If you want to use the above, remember to create the Payments directory! In that directory, overtime you will see the history of your payments in this way:
 ```
+20180714_073501.PrePayment.poollogs.json
+20180714_073507.PostPayment.poollogs.json
+20180714_073511.payments.sh
 20180721_073501.PrePayment.poollogs.json
 20180721_073507.PostPayment.poollogs.json
 20180721_073511.payments.sh
