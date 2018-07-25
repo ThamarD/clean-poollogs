@@ -20,8 +20,11 @@ It uses the information from the config.json which was created during the Lisk p
 First clone the Cleanpoollogs repository (I asume you already have installed the Lisk pool and requests):
 
 `git clone https://github.com/ThamarD/clean-poollogs`
+
 `cd clean-poollogs`
+
 `cp cleanpoollogs.py ~/lisk-pool/cleanpoollogs.py`
+
 `cd ~/lisk-pool/`
 
 Tip: It is a good practice to make a backup of your poollogs.json while you are trying something new!
